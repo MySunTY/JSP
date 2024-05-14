@@ -45,7 +45,7 @@
 	</head>
 	<body>
 		<div id="wrap">
-			<form method="get" action="">
+			<form>
 			<div class="title">
 				<h1>회원가입</h1>
 			</div>
@@ -84,7 +84,6 @@
 				</ul>
 			</div>
 			<hr>
-			<input type="submit" value="로그인">
 		</form>
 		</div>
 	

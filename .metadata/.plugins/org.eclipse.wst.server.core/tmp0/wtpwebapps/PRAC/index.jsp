@@ -12,13 +12,22 @@
 				border: 3px solid black;
 				
 				margin : 0 auto;
+				
+			}
+			ul{
+				margin-left : 0;
+				
 			}
 			li{
 				list-style : none;
+				font-weight : bold;
+				font-size : 1.5em ;
+				
 			}
 			.desc{
 				width: 200px;
 				display : inline-block;
+				
 				
 			}
 			.inputs{
@@ -26,11 +35,17 @@
 				
 				display: inline-block;
 			}
+			.title{
+				text-align : center;
+			}
+			li>input{
+				width :230px;
+			}
 		</style>
 	</head>
 	<body>
 		<div id="wrap">
-			<form>
+			<form method="get" action="">
 			<div class="title">
 				<h1>회원가입</h1>
 			</div>
@@ -68,6 +83,8 @@
 				
 				</ul>
 			</div>
+			<hr>
+			<input type="submit" value="로그인">
 		</form>
 		</div>
 	
