@@ -1,0 +1,14 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>첫번째 JSP</title>
+	</head>
+	<body>
+		<h1>반갑습니다!</h1>
+		<% String str = "자바로 만든 인사"; %>
+		<h1 style="color:red"><% out.print(str); %></h1>
+	</body>
+</html>

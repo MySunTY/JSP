@@ -1,0 +1,29 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>첫번째 JSP</title>
+		<style>
+			h1{
+				text-aglin : center;
+			}
+		</style>
+	</head>
+	<body>
+		<%
+			int a=10;
+			int b=20;
+			int result = a+b;
+		%>
+		<h1>반갑습니다!</h1>
+		<% out.print(result); %>
+		<% String str = "자바로 만든 인사"; %>
+		<h1 style="color:red"><% out.print(str); %></h1>
+		<!-- 127.0.0.1:8080/JSP01 -->
+		<script>
+			alert("<% out.print(result); %>")
+		</script>
+	</body>
+</html>
