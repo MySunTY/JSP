@@ -6,6 +6,7 @@
 		<meta charset="utf-8">
 		<title>데이터 전송 실습</title>
 		<link rel="stylesheet" href="css/style.css">
+		<script src="js/script.js"></script>
 	</head>
 	<body>
 		<div id="wrap">
