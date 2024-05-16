@@ -1,0 +1,7 @@
+console.log("동작확인!");
+let test = document.getElementById("wrap");
+console.log(window);
+window.onload=function(){
+	let test = document.getElementById("wrap");
+	console.log(test);
+}
