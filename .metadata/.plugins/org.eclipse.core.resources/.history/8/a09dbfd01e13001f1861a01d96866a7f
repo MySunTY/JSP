@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>자바 일반 문법의 이용</title>
+	</head>
+	<body>
+		<%
+			int number =-3;
+			if(number>0){
+		%>		
+				<h1><%=number%>(은)는 양수입니다</h1>
+		<%		
+			}//if문
+			else{
+		%>		
+				<h2>
+		<%		
+					out.print(number +"은(는) 음수입니다");
+		%>
+				</h2>
+				
+		<%		
+			}//else
+		
+		%>
+	</body>
+</html>

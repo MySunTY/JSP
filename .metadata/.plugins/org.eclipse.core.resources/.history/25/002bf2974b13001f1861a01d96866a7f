@@ -1,0 +1,15 @@
+@charset "utf-8";
+#wrap{
+	width: 300px;
+	height : 200px;
+	border : 1px solid black;
+	margin : 0 auto;
+	
+}
+#wrap>div{
+	width:98px;
+	height : 34px;
+	border : 1px solid black;
+	float: left;
+	
+}

@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>색 변경</title>
+	</head>
+	<body>
+		
+		
+		<%
+			String[] color= {"RED","ORANGE","YELLOW","PINK","BROWN"}; //0~4
+			for(int i = 0 ; i<30 ; i++){
+		%>
+				<h1 style="color:<%=color[i%5]%>"><%=color[i]%></h1>
+		<%
+			}//for문
+			
+		
+		%>
+		
+	</body>
+</html>
