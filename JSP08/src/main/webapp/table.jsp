@@ -1,50 +1,89 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html>
+	<html>
 	<head>
 		<meta charset="utf-8">
-		<title>데이터 전송 실습</title>
-		<link rel="stylesheet" href="css/style.css">
-		<script src="js/script.js"></script>
+		<title>데이터 전송</title>
+		
+		<style>
+			tr, th, td{
+				border : 1px solid black;
+				
+				
+			}
+			table{
+				border-collapse : collapse;
+				text-align : center;
+				margin: 0 auto;
+				width: 300px;
+				
+			}
+			
+			
+			
+		</style>
 	</head>
 	<body>
 		<div id="wrap">
-			<div class="th">상품명</div>
-			<div class="th">가격</div>
-			<div class="th">수량</div>
-			<div class="td">컴퓨터</div>
-			<div class="td">10000000</div>
-			<div class="td">
-				<select>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-			<div class="td">스마트폰</div>
-			<div class="td">15000000</div>
-			<div class="td">
-				<select>
-					<option>1</option>
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-				</select>
-			</div>
-			<div class="result">
-				<h1>결제총액</h1>
-				<h1>0원</h1>
-				<input type="submit" value="결제하기">
-			</div>
+			<table>
+				<thead>
+				<tr>
+					<th>상품명</th>
+					<th>가격</th>
+					<th>수량</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>컴퓨터</td>
+					<td><span class="qq">1000000</span></td>
+					<td>
+						<input type="number" name="comNum" min="0" max="5" value="0">
+					</td>
+				
+				</tr>
+				<tr>
+					<td>스마트폰</td>
+					<td><span class="qq">1500000</span></td>
+					<td>
+						<input type="number" name="phoneNum" min="0" max="5" value="0">
+					</td>
+				
+				
+				</tr>
+				</tbody>
+				<tfoot>
+					<tr rowspan="4">
+						<td colspan="3">
+							<h2>결제총액</h2>
+							<h2>
+								<span id="sum">0</span>원
+							</h2>
+							<input type="submit" value="결제하기">
+							
+						
+						
+						</td>
+						
+					</tr>
+				</tfoot>	
+			</table>
 		</div>
-		<!-- #wrap:after{
-	content:"가나다라"; css로 만든 글자, 수정안됨
-} -->
-<!-- div는 고무줄같은 성질, 자식들이 있으면 그만큼 늘어나지만
-자식이 없다고 판단되면(전부 float이라 붕 떠있을때)쪼끄라들어버림 -->
+		
+		<script>
+			let sums = document.getElementById("sum");
+			let qq = document.getElementsByClassName("qq");
+			let inputs = document.getElementsByTagName("input");
+			
+			inputs[2].addEventListener("click",function(){
+				sums.innerHTML = Number(qq[0].innerHTML)*Number(inputs[0].value)
+								+Number(qq[1].innerHTML)*Number(inputs[1].value);
+				
+				
+			});
+			
+			
+		</script>
 	</body>
 </html>
