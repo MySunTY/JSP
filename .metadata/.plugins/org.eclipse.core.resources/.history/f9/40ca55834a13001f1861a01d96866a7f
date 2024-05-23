@@ -1,6 +1,0 @@
-@charset "utf-8";
-#wrap{
-	width: 300px;
-	border : 1px solid black;
-	
-}
