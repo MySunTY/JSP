@@ -17,8 +17,9 @@
 	</head>
 	<body>
 		<div id="wrap">
-			<a href="register.jsp">회원가입</a><br>
+			<a href="insert.jsp">회원가입</a><br>
 			<a href="member.jsp">회원조회</a>
+			<a href="edit.jsp">회원정보 수정</a>
 		</div>
 	</body>
 </html>
