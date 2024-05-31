@@ -27,6 +27,11 @@
 		<jsp:getProperty name="s" property="name"></jsp:getProperty>
 		
 		<jsp:setProperty name="s" property="age" value="50"></jsp:setProperty>
+			<%
+				//s.setAge(25);
+				//name.set Property(value);
+			%>
+		
 		<jsp:getProperty name="s" property="age"></jsp:getProperty>
 		<jsp:setProperty name="s" property="address" value="서울시노원구"></jsp:setProperty>
 		<jsp:getProperty name="s" property="address"></jsp:getProperty>
