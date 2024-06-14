@@ -22,6 +22,8 @@
 				<option value="1">빨강</option>
 				<option value="2">주황</option>
 				<option value="3" selected>노랑</option>
+				<option value="4">초록</option>
+				<option value="5">파랑</option>
 				
 			</select>
 			<input type="submit" value="선택">

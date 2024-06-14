@@ -11,11 +11,38 @@
 		<%
 			String color = request.getParameter("color");
 			int number = Integer.parseInt(color);
-			
+			if(number==1){
+				%>
+					<h1 style="color:red">빨강색입니다</h1>
+				<%
+			}else{
+				%>
+					<h1 style="color:orange">주황색입니다</h1>
+					
+				<%
+				
+			}
 			
 		%>
 		<c:if test="${param.color==1 }">
-			<h1 style="color:red;">빨강색 입니다.</h1>
+			<h1 style="color:red;">빨강색입니다.</h1>
 		</c:if>
+		<!-- jstl에서는 if-else를 choose로 부른다 -->
+		
+		<c:choose>
+			<c:when test="${param.color==1 }">
+				<h1 style="color:red">빨강색입니다</h1>
+			</c:when>
+			<c:when test="${param.color==2 }">
+				<h1 style="color:orange">주황색입니다</h1>
+			</c:when>
+			<c:otherwise>
+				<h1 style="color:yellow">노란색입니다</h1>
+			</c:otherwise>
+		
+		</c:choose>
+		
+		<!-- c태그 안에는 주석달지않기 -->
+		
 	</body>
 </html>
