@@ -1,0 +1,34 @@
+ <!--시간표만들기, 보이는건 HTML은 아니고 xml에 만든 임의의 HTML임  -->
+
+ <table>
+ 	<tr>
+ 		<td>이름</td>
+ 		<td>과목</td>
+ 		<td>시간</td>
+ 	</tr>
+ 	
+ 	 <tr>
+ 		<td>이영준</td>
+ 		<td>JSP</td>
+ 		<td>09:00</td>
+ 	</tr>
+ 	
+ 	
+ 	
+ 	 <tr>
+ 		<td>고희선</td>
+ 		<td>JavaScripte</td>
+ 		<td>11:00</td>
+ 	</tr>
+ 	
+ 	<tr>
+ 		<td>김철수</td>
+ 		<td>AJAX</td>
+ 		<td>16:00</td>
+ 	</tr>
+ 	
+ 	
+ 	
+ 	
+ 	
+ </table>
